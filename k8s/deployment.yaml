@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: soma-api
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: soma-api
+  template:
+    metadata:
+      labels:
+        app: soma-api
+    spec:
+      containers:
+        - name: soma-api
+          image: mauriciofnti/soma-api:v2
+          ports:
+            - containerPort: 8000

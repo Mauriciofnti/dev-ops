@@ -9,12 +9,12 @@ def sum_values(a: int, b: int) -> int:
 
 @app.get("/")
 def read_root():
-    return {"message": "API de soma funcionando"}
+    return {"message": "API de soma v2"}
 
 
 @app.get("/sum/{a}/{b}")
 def get_sum(a: int, b: int):
-    return {"result": sum_values(a, b)}
+    return {"resultado": sum_values(a, b)}
 
 
 if __name__ == "__main__":
