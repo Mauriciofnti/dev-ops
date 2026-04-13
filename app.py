@@ -14,7 +14,7 @@ def read_root():
 
 @app.get("/sum/{a}/{b}")
 def get_sum(a: int, b: int):
-    return {"resultado": sum_values(a, b)}
+    return {"result": sum_values(a, b)}
 
 
 if __name__ == "__main__":
