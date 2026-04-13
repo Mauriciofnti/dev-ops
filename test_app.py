@@ -12,7 +12,7 @@ def test_root_endpoint():
     client = TestClient(app)
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "API de soma funcionando"}
+    assert response.json() == {"message": "API de soma v2"}
 
 
 def test_sum_endpoint():
